@@ -1,0 +1,16 @@
+<dt-stepper>
+
+  <dt-step label="step 1" >
+      <button (click)="onNextStep()">Next step</button>
+  </dt-step>
+
+  <dt-step label="step 2" >
+    <span>done</span>
+    <div *ngFor="let thing of things">
+      <div *ngIf="true">
+        The presence of this ngIf breaks the rendering. Removing the ngIf will make everything work.
+      </div>
+    </div>
+  </dt-step>
+
+</dt-stepper>
